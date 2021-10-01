@@ -27,7 +27,7 @@ public class DeckOfCard {
 	 }
 	 
 	  public void print() {
-	//printing all card
+	
 		  for (int i =0;i<cardArray.length;i++) {
 			  System.out.println(cardArray[i]+"");
 		  }
