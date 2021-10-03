@@ -8,5 +8,7 @@ public class DeckofCardMain {
 		deckofcard.printCard();
 		deckofcard.players();
 		deckofcard.sequenceOfPlayers(deckofcard.player);
+		deckofcard.shuffleCardsDeck();
+		deckofcard.cardDisturbtion(deckofcard.player);
 	}
 }

@@ -91,6 +91,18 @@ public class DeckOfCard {
 						cards[temp2] = temp;
 					}
 				}
-
+			}
+		    
+		    public void cardDisturbtion(int players) {
+		    	int count = 0;
+		    	for (int i = 0; i < players; i++) {
+					System.out.print("For Player " + i + ": \n");
+					for (int j = 0; j < 9; j++) {
+	
+						System.out.print(cards[count] + "-->");
+						count++;
+					}
+					System.out.println();
 			}
 	}
+}
