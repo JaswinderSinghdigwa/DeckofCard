@@ -8,6 +8,7 @@
 	 ******************************************************************************/
 	package com.bl.deckofcard;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class DeckOfCard {
@@ -33,7 +34,12 @@ public class DeckOfCard {
 		 	}
 		}
 		 
-		 //Displaying cards and rank ,suit 
+		 /**
+			 * Purpose: Display the card of deck
+			 * 
+			 * @param //Displaying cards and rank ,suit 
+			 */
+		 
 		 public void printCard() {
 		
 			  for (int i =0;i<cards.length;i++) //loop to print all the element of ArrayList
@@ -42,7 +48,13 @@ public class DeckOfCard {
 			  }
 		
 		 }
-		 //function player should be in between 2 to 4
+		 
+		 /**
+			 * Purpose: Number of Player
+			 * 
+			 * @param function player should be in between 2 to 4
+			 */
+		 
 		    public void players() {
 		    	System.out.print("Enter players should be minimum 2 , maximum 4 : ");
 		        player = scanner.nextInt();
@@ -58,4 +70,27 @@ public class DeckOfCard {
 		            System.out.println("\nPlayer " + i + " Getting card.............");
 		        }
 		    }
+		    
+		    /**
+			 * Purpose: shuffles the card of deck
+			 * 
+			 * @param arr array of cards
+			 * swaping of cards
+			 */
+		    
+		    public  void shuffleCardsDeck() {
+		    	Random random = new Random();
+				int temp1, temp2;
+				String temp;
+				for (int i = 0; i < 52; i++) {
+					temp1 = random.nextInt(51);
+					temp2 = random.nextInt(51);
+					if (temp1 != temp2) {
+						temp = cards[temp1];
+						cards[temp1] = cards[temp2];
+						cards[temp2] = temp;
+					}
+				}
+
+			}
 	}
