@@ -42,6 +42,7 @@ public class DeckOfCard {
 			  }
 		
 		 }
+		 //function player should be in between 2 to 4
 		    public void players() {
 		        System.out.print("Enter players should be minimum 2 , maximum 4 : ");
 		        int player = scanner.nextInt();

@@ -6,6 +6,6 @@ public class DeckofCardMain {
 		System.out.print("Welcom to Deck Of Crad");
 		deckofcard.DeckofcardGame();
 		deckofcard.printCard();
-		deckofcard.Players();
+		deckofcard.players();
 	}
 }
