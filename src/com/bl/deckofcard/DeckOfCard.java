@@ -15,7 +15,7 @@ public class DeckOfCard {
 
 		 String[] suit = { "Clubs" , "Diamonds" , "Heart" ,"Spade"};
 		 String[] rank =  { "2","3","4","5","6","7","8","9","10","Jack","Queen","King","Ace"};
-		 
+		 public static int player;
 		 //initialized the size of cards
 		 String[] cards = new String[52];
 		 private int start= 0,end =12 ,count =0;
@@ -44,11 +44,18 @@ public class DeckOfCard {
 		 }
 		 //function player should be in between 2 to 4
 		    public void players() {
-		        System.out.print("Enter players should be minimum 2 , maximum 4 : ");
-		        int player = scanner.nextInt();
+		    	System.out.print("Enter players should be minimum 2 , maximum 4 : ");
+		        player = scanner.nextInt();
 		        if (player >= 2 && player <= 4) {
 		            System.out.println(player + " players will play the game");
 		        } 
-		 
+		        
+		    }
+		    
+		    public void sequenceOfPlayers(int players) {
+		        System.out.println("\nSequence of cards are below : ");
+		        for (int i = 1; i <= players; i++) {
+		            System.out.println("\nPlayer " + i + " Getting card.............");
+		        }
 		    }
 	}

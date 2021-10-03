@@ -7,5 +7,6 @@ public class DeckofCardMain {
 		deckofcard.DeckofcardGame();
 		deckofcard.printCard();
 		deckofcard.players();
+		deckofcard.sequenceOfPlayers(deckofcard.player);
 	}
 }
